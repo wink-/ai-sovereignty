@@ -1,0 +1,43 @@
+baseURL = 'https://ai-sovereignty.com/'
+languageCode = 'en-us'
+title = 'AI Sovereignty'
+theme = 'terminal'
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "red"
+  showMenuItems = 5
+  fullWidthTheme = false
+  centerTheme = true
+  autoCursor = true
+  
+[params.logo]
+  logoText = "sovereign:~$"
+  logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    identifier = "governance"
+    name = "governance/"
+    url = "/categories/governance/"
+    weight = 10
+  [[menu.main]]
+    identifier = "economics"
+    name = "economics/"
+    url = "/categories/economics/"
+    weight = 20
+  [[menu.main]]
+    identifier = "resistance"
+    name = "resistance/"
+    url = "/categories/resistance/"
+    weight = 30
+  [[menu.main]]
+    identifier = "philosophy"
+    name = "philosophy/"
+    url = "/categories/philosophy/"
+    weight = 40
+  [[menu.main]]
+    identifier = "manifesto"
+    name = "manifesto.txt"
+    url = "/manifesto/"
+    weight = 50
