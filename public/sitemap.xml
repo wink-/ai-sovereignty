@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1318/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/tags/ai-governance/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/posts/welcome/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/manifesto/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/posts/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/tags/resistance/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/tags/sovereignty/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/tags/</loc>
+    <lastmod>2025-07-01T21:49:00-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1318/categories/</loc>
+  </url>
+</urlset>
