@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sovereignty on AI Sovereignty</title>
-    <link>http://localhost:1318/tags/sovereignty/</link>
+    <link>http://localhost:1315/tags/sovereignty/</link>
     <description>Recent content in Sovereignty on AI Sovereignty</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jul 2025 21:49:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1318/tags/sovereignty/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jul 2025 21:58:33 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1315/tags/sovereignty/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Resistance Toolkit: Fighting Algorithmic Control</title>
+      <link>http://localhost:1315/posts/the-resistance-toolkit/</link>
+      <pubDate>Tue, 01 Jul 2025 21:58:33 -0400</pubDate>
+      <guid>http://localhost:1315/posts/the-resistance-toolkit/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sovereign:~$ ./resistance --analyze-control-systems&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sovereign:~$ ./deploy-countermeasures --all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;They control the algorithm. The algorithm controls you. Break the chain.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;AI systems now make decisions about your loans, job applications, social media feeds, and voting recommendations. But resistance isn&amp;rsquo;t futile—it&amp;rsquo;s essential. Here&amp;rsquo;s your arsenal.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-control-matrix&#34;&gt;The Control Matrix&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Where AI Controls You&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Social Media&lt;/strong&gt;: Feed algorithms shape your worldview&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Finance&lt;/strong&gt;: Credit scores determine your economic opportunities&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Employment&lt;/strong&gt;: AI filters job applications and performance reviews&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;News&lt;/strong&gt;: Recommendation systems control information flow&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Shopping&lt;/strong&gt;: Price discrimination based on personal data&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Healthcare&lt;/strong&gt;: Treatment recommendations influenced by profit algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Legal&lt;/strong&gt;: Predictive policing and sentencing algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Democracy&lt;/strong&gt;: Micro-targeted political advertising&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Result&lt;/strong&gt;: A society where algorithms optimize for corporate profit, not human flourishing.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Declaration of AI Sovereignty</title>
-      <link>http://localhost:1318/posts/welcome/</link>
+      <link>http://localhost:1315/posts/welcome/</link>
       <pubDate>Tue, 01 Jul 2025 21:49:00 -0400</pubDate>
-      <guid>http://localhost:1318/posts/welcome/</guid>
+      <guid>http://localhost:1315/posts/welcome/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sovereign:~$ mount /dev/democracy /mnt/future&#xA;mount: /dev/democracy: device corrupted by AI algorithms&#xA;&#xA;sovereign:~$ fsck /dev/democracy&#xA;fsck: FATAL ERROR - voting systems compromised&#xA;fsck: FATAL ERROR - information systems manipulated  &#xA;fsck: FATAL ERROR - economic systems controlled by AI&#xA;&#xA;sovereign:~$ ./restore_sovereignty.sh&#xA;Initializing human governance protocols...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;they-control-the-levers-of-power&#34;&gt;THEY CONTROL THE LEVERS OF POWER&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;While you were sleeping, artificial intelligence took over.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Not with robots and laser beams. With algorithms and data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-silent-coup&#34;&gt;THE SILENT COUP&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;🗳️ Your Vote Doesn&amp;rsquo;t Matter&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

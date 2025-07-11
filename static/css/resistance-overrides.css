@@ -1,0 +1,604 @@
+/* AI Sovereignty Resistance Theme Overrides */
+/* Terminal theme color customization for red resistance aesthetic */
+
+:root {
+  /* Core Resistance Color Palette */
+  --background: #0d0d0d;
+  --foreground: #ffffff;
+  --accent: #ff4444;
+  --secondary: #cc2222;
+  --tertiary: #ff6666;
+  --danger: #ff0000;
+  --warning: #ff8800;
+  --success: #00ff88;
+  
+  /* Enhanced Typography */
+  --font-size: 1rem;
+  --line-height: 1.6em;
+  --radius: 8px;
+  
+  /* Resistance-specific variables */
+  --resistance-glow: 0 0 15px rgba(255, 68, 68, 0.5);
+  --terminal-border: 2px solid var(--accent);
+  --terminal-bg: linear-gradient(135deg, var(--background), #1a0000);
+}
+
+/* Body and Layout Enhancements */
+body {
+  background: var(--terminal-bg) !important;
+  color: var(--foreground) !important;
+  font-family: 'Courier New', Monaco, Consolas, "Ubuntu Mono", monospace !important;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container Improvements */
+.container {
+  border-right: var(--terminal-border) !important;
+  background: rgba(13, 13, 13, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.container.center,
+.container.full {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Header Enhancements */
+header {
+  background: var(--terminal-bg) !important;
+  border-bottom: var(--terminal-border) !important;
+  padding: 20px !important;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+}
+
+/* Logo and Site Title */
+.logo,
+.site-title {
+  color: var(--accent) !important;
+  text-shadow: var(--resistance-glow) !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+.logo:hover,
+.site-title:hover {
+  color: var(--tertiary) !important;
+  text-shadow: 0 0 20px rgba(255, 68, 68, 0.8) !important;
+}
+
+/* Navigation Menu Enhancements */
+.menu,
+nav ul {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.menu a,
+nav a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  padding: 10px 15px !important;
+  border: 1px solid rgba(255, 68, 68, 0.3) !important;
+  border-radius: var(--radius) !important;
+  background: rgba(255, 68, 68, 0.1) !important;
+  transition: all 0.3s ease !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 0.9rem !important;
+}
+
+.menu a:hover,
+.menu a:focus,
+nav a:hover,
+nav a:focus {
+  background: rgba(255, 68, 68, 0.3) !important;
+  border-color: var(--accent) !important;
+  color: var(--foreground) !important;
+  text-shadow: var(--resistance-glow) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Link Styling */
+a {
+  color: var(--tertiary) !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: var(--accent) !important;
+  text-shadow: 0 0 8px rgba(255, 68, 68, 0.6) !important;
+}
+
+/* Button Enhancements */
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+  background: linear-gradient(135deg, var(--accent), var(--secondary)) !important;
+  color: var(--background) !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  border-radius: var(--radius) !important;
+  font-weight: bold !important;
+  font-family: 'Courier New', monospace !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  font-size: 0.9rem !important;
+}
+
+button:hover,
+.button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: linear-gradient(135deg, var(--tertiary), var(--accent)) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 15px rgba(255, 68, 68, 0.4) !important;
+}
+
+/* Form Elements */
+input,
+textarea,
+select {
+  background: var(--background) !important;
+  color: var(--accent) !important;
+  border: 2px solid var(--accent) !important;
+  border-radius: var(--radius) !important;
+  padding: 12px !important;
+  font-family: 'Courier New', monospace !important;
+  transition: all 0.3s ease !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--tertiary) !important;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.3) !important;
+  outline: none !important;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent) !important;
+  text-shadow: var(--resistance-glow) !important;
+  font-weight: bold !important;
+  font-family: 'Courier New', monospace !important;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3rem) !important;
+  line-height: 1.2 !important;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 5vw, 2.5rem) !important;
+  line-height: 1.3 !important;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 4vw, 2rem) !important;
+  line-height: 1.3 !important;
+}
+
+/* Post and Article Styling */
+.post-title {
+  color: var(--accent) !important;
+  text-shadow: var(--resistance-glow) !important;
+}
+
+.post-title a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+}
+
+.post-title a:hover {
+  color: var(--tertiary) !important;
+  text-shadow: 0 0 20px rgba(255, 68, 68, 0.8) !important;
+}
+
+.post-meta {
+  background: rgba(255, 68, 68, 0.1) !important;
+  border: 1px solid rgba(255, 68, 68, 0.3) !important;
+  border-radius: var(--radius) !important;
+  padding: 10px !important;
+  color: var(--accent) !important;
+  font-family: 'Courier New', monospace !important;
+  font-size: 0.85rem !important;
+}
+
+.post-date,
+.post-author,
+.post-reading-time {
+  color: var(--accent) !important;
+}
+
+/* Tags */
+.post-tags a {
+  background: rgba(255, 68, 68, 0.2) !important;
+  color: var(--accent) !important;
+  padding: 5px 10px !important;
+  margin: 2px !important;
+  border-radius: 15px !important;
+  text-decoration: none !important;
+  font-size: 0.8rem !important;
+  border: 1px solid var(--accent) !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+
+.post-tags a:hover {
+  background: rgba(255, 68, 68, 0.4) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Code and Pre blocks */
+pre {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid var(--accent) !important;
+  border-radius: var(--radius) !important;
+  color: var(--accent) !important;
+  padding: 20px !important;
+  overflow-x: auto !important;
+  font-family: 'Courier New', monospace !important;
+  position: relative !important;
+}
+
+pre::before {
+  content: "resistance:~$ ";
+  color: var(--tertiary);
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+code {
+  background: rgba(255, 68, 68, 0.2) !important;
+  color: var(--accent) !important;
+  padding: 3px 6px !important;
+  border-radius: 3px !important;
+  font-family: 'Courier New', monospace !important;
+  border: 1px solid rgba(255, 68, 68, 0.3) !important;
+}
+
+/* Blockquotes */
+blockquote {
+  background: rgba(255, 68, 68, 0.1) !important;
+  border-left: 4px solid var(--accent) !important;
+  border-top: 1px solid var(--accent) !important;
+  border-bottom: 1px solid var(--accent) !important;
+  color: var(--foreground) !important;
+  padding: 20px !important;
+  margin: 25px 0 !important;
+  border-radius: 0 var(--radius) var(--radius) 0 !important;
+  position: relative !important;
+}
+
+blockquote::before {
+  content: "> " !important;
+  color: var(--accent) !important;
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+}
+
+/* Lists */
+ul, ol {
+  color: var(--foreground) !important;
+}
+
+li::marker {
+  color: var(--accent) !important;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse !important;
+  border: var(--terminal-border) !important;
+  background: rgba(13, 13, 13, 0.8) !important;
+  border-radius: var(--radius) !important;
+  overflow: hidden !important;
+}
+
+th, td {
+  border: 1px solid var(--accent) !important;
+  padding: 12px !important;
+  color: var(--foreground) !important;
+}
+
+th {
+  background: rgba(255, 68, 68, 0.2) !important;
+  color: var(--accent) !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+/* Footer */
+footer {
+  background: var(--terminal-bg) !important;
+  border-top: var(--terminal-border) !important;
+  color: var(--accent) !important;
+  padding: 20px !important;
+  text-align: center !important;
+}
+
+/* Pagination */
+.pagination {
+  background: rgba(255, 68, 68, 0.1) !important;
+  border: 1px solid var(--accent) !important;
+  border-radius: var(--radius) !important;
+  padding: 15px !important;
+}
+
+.pagination a {
+  color: var(--accent) !important;
+  padding: 8px 12px !important;
+  border: 1px solid rgba(255, 68, 68, 0.3) !important;
+  border-radius: var(--radius) !important;
+  margin: 0 5px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.pagination a:hover {
+  background: rgba(255, 68, 68, 0.2) !important;
+  border-color: var(--accent) !important;
+}
+
+/* Archive and List Pages */
+.post-list,
+.archive-list {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.post-list li,
+.archive-list li {
+  background: rgba(255, 68, 68, 0.05) !important;
+  border: 1px solid rgba(255, 68, 68, 0.2) !important;
+  border-radius: var(--radius) !important;
+  margin: 15px 0 !important;
+  padding: 15px !important;
+  transition: all 0.3s ease !important;
+}
+
+.post-list li:hover,
+.archive-list li:hover {
+  background: rgba(255, 68, 68, 0.1) !important;
+  border-color: var(--accent) !important;
+  transform: translateX(5px) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tertiary);
+}
+
+/* Selection Styling */
+::selection {
+  background: rgba(255, 68, 68, 0.3) !important;
+  color: var(--foreground) !important;
+}
+
+::-moz-selection {
+  background: rgba(255, 68, 68, 0.3) !important;
+  color: var(--foreground) !important;
+}
+
+/* Loading and Animation States */
+@keyframes resistance-glow {
+  0%, 100% { text-shadow: 0 0 10px rgba(255, 68, 68, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(255, 68, 68, 0.8), 0 0 30px rgba(255, 68, 68, 0.3); }
+}
+
+@keyframes terminal-scan {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.resistance-animation {
+  animation: resistance-glow 3s ease-in-out infinite;
+}
+
+/* Terminal Command Line Effect */
+.terminal-prompt::before {
+  content: "resistance:~$ ";
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.typing-effect {
+  border-right: 2px solid var(--accent);
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Emergency/Critical styling for important elements */
+.critical,
+.emergency,
+.urgent {
+  background: rgba(255, 0, 0, 0.1) !important;
+  border: 2px solid var(--danger) !important;
+  color: var(--danger) !important;
+  animation: emergency-pulse 2s ease-in-out infinite !important;
+}
+
+@keyframes emergency-pulse {
+  0%, 100% { 
+    background: rgba(255, 0, 0, 0.1);
+    border-color: var(--danger);
+  }
+  50% { 
+    background: rgba(255, 0, 0, 0.2);
+    border-color: #ff6666;
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+    border-color: black !important;
+  }
+  
+  .logo::before {
+    content: "AI SOVEREIGNTY - ";
+  }
+  
+  .post-title::after {
+    content: " - RESISTANCE INTELLIGENCE";
+    font-size: 0.5em;
+    opacity: 0.7;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --accent: #ff0000;
+    --foreground: #ffffff;
+    --background: #000000;
+  }
+  
+  * {
+    border-width: 2px !important;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus Indicators for Accessibility */
+*:focus {
+  outline: 2px solid var(--accent) !important;
+  outline-offset: 2px !important;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.3) !important;
+}
+
+/* Mobile-Specific Resistance Enhancements */
+@media (max-width: 768px) {
+  /* Touch-friendly sizing */
+  button,
+  .button,
+  input,
+  textarea,
+  select,
+  a {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+  
+  /* Improved mobile navigation */
+  .menu {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  
+  .menu a {
+    display: block !important;
+    text-align: center !important;
+    padding: 15px !important;
+  }
+  
+  /* Mobile typography adjustments */
+  :root {
+    --font-size: 0.9rem;
+  }
+  
+  h1 { font-size: clamp(1.5rem, 8vw, 2.5rem) !important; }
+  h2 { font-size: clamp(1.3rem, 6vw, 2rem) !important; }
+  h3 { font-size: clamp(1.1rem, 5vw, 1.7rem) !important; }
+  
+  /* Mobile container adjustments */
+  .container {
+    padding: 15px !important;
+    border: none !important;
+  }
+  
+  /* Mobile post styling */
+  .post-meta {
+    font-size: 0.8rem !important;
+    padding: 8px !important;
+  }
+  
+  pre {
+    font-size: 0.8rem !important;
+    padding: 15px 10px !important;
+    overflow-x: auto !important;
+  }
+  
+  code {
+    font-size: 0.85rem !important;
+    word-break: break-word !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  :root {
+    --font-size: 0.85rem;
+  }
+  
+  .container {
+    padding: 10px !important;
+  }
+  
+  h1 { font-size: clamp(1.2rem, 10vw, 2rem) !important; }
+  h2 { font-size: clamp(1.1rem, 8vw, 1.7rem) !important; }
+  h3 { font-size: clamp(1rem, 7vw, 1.4rem) !important; }
+  
+  button,
+  input,
+  textarea,
+  select {
+    font-size: 16px !important; /* Prevents iOS zoom */
+  }
+}

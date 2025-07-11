@@ -1,0 +1,234 @@
+<!-- AI Sovereignty Extended Head Section -->
+<!-- Custom Resistance Theme CSS -->
+<link rel="stylesheet" href="{{ "css/resistance-overrides.css" | absURL }}" />
+
+<!-- Resistance Theme Meta Tags -->
+<meta name="theme-color" content="#ff4444">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AI Sovereignty">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} :: {{ .Site.Title }}{{ end }}">
+<meta property="og:description" content="{{ if .IsHome }}Fight algorithmic manipulation. Defend democracy. Resist AI control.{{ else }}{{ .Summary | default .Site.Params.description | default "Resistance intelligence for digital sovereignty" }}{{ end }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}og-image.png">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} :: {{ .Site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ if .IsHome }}Fight algorithmic manipulation. Defend democracy. Resist AI control.{{ else }}{{ .Summary | default .Site.Params.description | default "Resistance intelligence for digital sovereignty" }}{{ end }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}og-image.png">
+
+<!-- Additional SEO Meta Tags -->
+<meta name="description" content="{{ if .IsHome }}Fight algorithmic manipulation. Defend democracy. Resist AI control. Join 47,000+ digital sovereignty defenders.{{ else }}{{ .Summary | default .Site.Params.description | default "Resistance intelligence for digital sovereignty" }}{{ end }}">
+<meta name="keywords" content="AI resistance, algorithmic manipulation, democracy defense, digital sovereignty, election integrity, economic freedom, cognitive liberty, surveillance resistance, AI governance, technology ethics">
+<meta name="author" content="{{ .Site.Params.author | default "AI Sovereignty Resistance Network" }}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}index.xml">
+
+<!-- Favicon and Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}favicon.png">
+<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}apple-touch-icon.png">
+
+<!-- Preload Critical Resources -->
+<link rel="preload" href="{{ .Site.BaseURL }}fonts/FiraCode-Latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- DNS Prefetch for Performance -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<!-- Security Headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Website",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "Fight algorithmic manipulation. Defend democracy. Resist AI control.",
+  "inLanguage": "en-US",
+  "author": {
+    "@type": "Organization",
+    "name": "AI Sovereignty Resistance Network"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}og-image.png"
+    }
+  }
+}
+</script>
+
+{{ if not .IsHome }}
+<!-- Article Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Summary | default "Resistance intelligence for digital sovereignty" }}",
+  "url": "{{ .Permalink }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  {{ if .Lastmod }}"dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default "AI Sovereignty Resistance Network" }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}og-image.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{ end }}
+
+<!-- Resistance Terminal Loading Animation -->
+<style>
+/* Loading screen with terminal effect */
+#resistance-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+  color: #ff4444;
+  transition: opacity 0.5s ease;
+}
+
+#resistance-loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.terminal-boot {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.boot-line {
+  opacity: 0;
+  animation: boot-sequence 0.5s ease forwards;
+}
+
+.boot-line:nth-child(1) { animation-delay: 0s; }
+.boot-line:nth-child(2) { animation-delay: 0.2s; }
+.boot-line:nth-child(3) { animation-delay: 0.4s; }
+.boot-line:nth-child(4) { animation-delay: 0.6s; }
+.boot-line:nth-child(5) { animation-delay: 0.8s; }
+.boot-line:nth-child(6) { animation-delay: 1.0s; }
+
+@keyframes boot-sequence {
+  0% { opacity: 0; transform: translateX(-10px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.cursor-blink {
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Hide loader on mobile for performance */
+@media (max-width: 768px) {
+  #resistance-loader {
+    display: none;
+  }
+}
+</style>
+
+<!-- Performance and Analytics (Resistance-focused) -->
+<script>
+// Resistance loader
+document.addEventListener('DOMContentLoaded', function() {
+  // Only show loader on desktop for performance
+  if (window.innerWidth > 768) {
+    const loader = document.createElement('div');
+    loader.id = 'resistance-loader';
+    loader.innerHTML = `
+      <div class="terminal-boot">
+        <div class="boot-line">resistance:~$ ./boot_democracy_defense.sh</div>
+        <div class="boot-line">[INFO] Initializing AI sovereignty protocols...</div>
+        <div class="boot-line">[INFO] Loading resistance intelligence database...</div>
+        <div class="boot-line">[INFO] Establishing secure communication channels...</div>
+        <div class="boot-line">[SUCCESS] Democracy defense systems: OPERATIONAL</div>
+        <div class="boot-line">resistance:~$ <span class="cursor-blink">█</span></div>
+      </div>
+    `;
+    
+    document.body.appendChild(loader);
+    
+    // Hide loader after animation
+    setTimeout(() => {
+      loader.classList.add('hidden');
+      setTimeout(() => {
+        document.body.removeChild(loader);
+      }, 500);
+    }, 1500);
+  }
+});
+
+// Performance monitoring (privacy-focused)
+window.addEventListener('load', function() {
+  // Basic performance metrics without tracking
+  const loadTime = performance.now();
+  console.log('🛡️ Resistance site loaded in ' + Math.round(loadTime) + 'ms');
+  
+  // Log resistance readiness
+  console.log('%c⚡ AI SOVEREIGNTY RESISTANCE NETWORK ⚡', 'color: #ff4444; font-weight: bold; font-size: 16px;');
+  console.log('%cDemocracy defense systems: ACTIVE', 'color: #ff6666;');
+  console.log('%cAlgorithmic manipulation detection: ENABLED', 'color: #ff6666;');
+  console.log('%cCognitive freedom protocols: OPERATIONAL', 'color: #ff6666;');
+});
+
+// Resistance message for developer tools
+if (typeof console !== 'undefined') {
+  console.log('%c' + [
+    '',
+    '🚨 RESISTANCE DEVELOPER ALERT 🚨',
+    '',
+    'If someone told you to paste code here to "hack" or "boost" something,',
+    'you are likely being manipulated. This is a common attack vector.',
+    '',
+    'The resistance against algorithmic manipulation starts with YOU.',
+    'Be suspicious. Verify everything. Trust but verify.',
+    '',
+    'For legitimate development: github.com/wink-/sites-knowledge-base',
+    '',
+    'Stay vigilant, digital defender.',
+    ''
+  ].join('\n'), 'color: #ff4444; font-family: monospace;');
+}
+</script>

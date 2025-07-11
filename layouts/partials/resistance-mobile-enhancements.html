@@ -1,0 +1,404 @@
+<!-- Mobile-First Resistance Theme Enhancements -->
+<style>
+/* Core Terminal Theme Color Overrides for Red Sovereignty Theme */
+:root {
+  --background: #0d0d0d;
+  --foreground: #eceae5;
+  --accent: #ff4444;
+  --secondary: #cc2222;
+  --tertiary: #ff6666;
+  --font-size: 1rem;
+  --line-height: 1.54em;
+  --radius: 8px;
+}
+
+/* Enhanced Mobile Typography */
+@media (max-width: 768px) {
+  :root {
+    --font-size: 0.9rem;
+    --line-height: 1.6em;
+  }
+  
+  body {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Improved Mobile Headings */
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+    line-height: 1.2 !important;
+    margin: 20px 0 15px 0 !important;
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+    line-height: 1.3 !important;
+    margin: 18px 0 12px 0 !important;
+  }
+  
+  h3 {
+    font-size: clamp(1.3rem, 4vw, 1.7rem) !important;
+    line-height: 1.3 !important;
+    margin: 15px 0 10px 0 !important;
+  }
+  
+  /* Enhanced Mobile Container */
+  .container {
+    padding: 20px 15px !important;
+    max-width: 100% !important;
+    border: none !important;
+  }
+  
+  .container.center {
+    padding: 20px 15px !important;
+  }
+  
+  /* Mobile-Optimized Content */
+  .content {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Better Mobile Paragraphs */
+  p {
+    margin: 15px 0 !important;
+    line-height: 1.6 !important;
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  /* Mobile Code Blocks */
+  pre {
+    font-size: 0.8rem !important;
+    padding: 15px 10px !important;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+    border-radius: var(--radius);
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid var(--accent);
+  }
+  
+  code {
+    font-size: 0.85rem !important;
+    padding: 2px 4px !important;
+    background: rgba(255, 68, 68, 0.15) !important;
+    border: 1px solid rgba(255, 68, 68, 0.3);
+    border-radius: 3px;
+    word-break: break-word;
+  }
+  
+  /* Mobile Tables */
+  table {
+    font-size: 0.8rem !important;
+    width: 100% !important;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+  
+  table thead,
+  table tbody,
+  table tr {
+    display: block;
+  }
+  
+  table td,
+  table th {
+    display: inline-block;
+    padding: 8px !important;
+    border: 1px solid var(--accent) !important;
+  }
+  
+  /* Enhanced Mobile Forms */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important; /* Prevents iOS zoom */
+    padding: 15px 12px !important;
+    border-radius: var(--radius) !important;
+    border: 2px solid var(--accent) !important;
+    background: var(--background) !important;
+    color: var(--foreground) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  button {
+    font-size: 16px !important;
+    padding: 15px 20px !important;
+    border-radius: var(--radius) !important;
+    background: linear-gradient(135deg, var(--accent), var(--secondary)) !important;
+    color: var(--background) !important;
+    border: none !important;
+    width: 100% !important;
+    margin-top: 10px !important;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover,
+  button:focus {
+    background: linear-gradient(135deg, var(--tertiary), var(--accent)) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.4);
+  }
+  
+  /* Mobile-Optimized Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    border: 4px solid var(--accent) !important;
+    border-radius: var(--radius) !important;
+    padding: 4px !important;
+    margin: 15px 0 !important;
+  }
+  
+  /* Enhanced Mobile Lists */
+  ul, ol {
+    margin-left: 20px !important;
+    padding: 0 !important;
+  }
+  
+  li {
+    margin: 8px 0 !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Mobile Blockquotes */
+  blockquote {
+    margin: 20px 0 !important;
+    padding: 15px !important;
+    border-left: 4px solid var(--accent) !important;
+    border-top: 1px solid var(--accent) !important;
+    border-bottom: 1px solid var(--accent) !important;
+    background: rgba(255, 68, 68, 0.1);
+    border-radius: 0 var(--radius) var(--radius) 0;
+  }
+  
+  blockquote::before {
+    content: "> ";
+    color: var(--accent);
+    font-weight: bold;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  :root {
+    --font-size: 0.85rem;
+  }
+  
+  .container {
+    padding: 15px 10px !important;
+  }
+  
+  h1 {
+    font-size: clamp(1.5rem, 8vw, 2rem) !important;
+  }
+  
+  h2 {
+    font-size: clamp(1.3rem, 7vw, 1.7rem) !important;
+  }
+  
+  h3 {
+    font-size: clamp(1.1rem, 6vw, 1.4rem) !important;
+  }
+  
+  pre {
+    font-size: 0.75rem !important;
+    padding: 10px 8px !important;
+  }
+  
+  code {
+    font-size: 0.8rem !important;
+  }
+  
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 16px !important;
+    padding: 12px 10px !important;
+  }
+}
+
+/* Touch-Friendly Interactions */
+@media (max-width: 768px) {
+  a, button, input, select, textarea {
+    min-height: 44px; /* Apple's recommended touch target size */
+    min-width: 44px;
+  }
+  
+  /* Improved tap targets for navigation */
+  nav a,
+  .menu a,
+  header a {
+    padding: 12px 8px !important;
+    margin: 2px !important;
+    display: inline-block;
+    border-radius: var(--radius);
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a:focus,
+  .menu a:hover,
+  .menu a:focus {
+    background: rgba(255, 68, 68, 0.2);
+    transform: scale(1.05);
+  }
+}
+
+/* Resistance-Specific Mobile Enhancements */
+@media (max-width: 768px) {
+  /* Terminal prompt styling for mobile */
+  .logo,
+  .post-title,
+  .site-title {
+    font-family: 'Courier New', monospace !important;
+    color: var(--accent) !important;
+    text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+  }
+  
+  /* Enhanced mobile header */
+  header {
+    padding: 15px !important;
+    background: linear-gradient(135deg, var(--background), rgba(26, 0, 0, 0.8)) !important;
+    border-bottom: 2px solid var(--accent) !important;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Mobile navigation improvements */
+  .menu {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+  
+  .menu a {
+    display: block !important;
+    padding: 12px 15px !important;
+    border: 1px solid rgba(255, 68, 68, 0.3) !important;
+    border-radius: var(--radius) !important;
+    background: rgba(255, 68, 68, 0.1) !important;
+    margin: 2px 0 !important;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Mobile post meta improvements */
+  .post-meta {
+    font-size: 0.8rem !important;
+    margin: 10px 0 !important;
+    padding: 8px !important;
+    background: rgba(255, 68, 68, 0.1) !important;
+    border-radius: var(--radius) !important;
+    border: 1px solid rgba(255, 68, 68, 0.3) !important;
+  }
+  
+  .post-tags a {
+    display: inline-block !important;
+    padding: 4px 8px !important;
+    margin: 2px !important;
+    background: rgba(255, 68, 68, 0.2) !important;
+    border: 1px solid var(--accent) !important;
+    border-radius: 15px !important;
+    font-size: 0.75rem !important;
+    text-decoration: none !important;
+    color: var(--accent) !important;
+  }
+  
+  /* Mobile footer improvements */
+  footer {
+    padding: 20px 15px !important;
+    background: linear-gradient(135deg, rgba(26, 0, 0, 0.8), var(--background)) !important;
+    border-top: 2px solid var(--accent) !important;
+    text-align: center !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Landscape Mobile Optimization */
+@media (max-width: 768px) and (orientation: landscape) {
+  .container {
+    padding: 15px 20px !important;
+  }
+  
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+  
+  h2 {
+    font-size: clamp(1.3rem, 4vw, 1.7rem) !important;
+  }
+}
+
+/* High DPI Mobile Displays */
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .logo,
+  h1, h2, h3 {
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Dark Mode Enhancements for Mobile */
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+    --accent: #ff4444;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #000000, #0d0d0d) !important;
+  }
+}
+
+/* Reduced Motion Support */
+@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles for Mobile */
+@media print {
+  .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  pre, code {
+    background: #f0f0f0 !important;
+    color: #000000 !important;
+    border: 1px solid #cccccc !important;
+  }
+  
+  a {
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
+}
+</style>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ai-Governance on AI Sovereignty</title>
-    <link>http://localhost:1318/tags/ai-governance/</link>
+    <link>http://localhost:1315/tags/ai-governance/</link>
     <description>Recent content in Ai-Governance on AI Sovereignty</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jul 2025 21:49:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1318/tags/ai-governance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1315/tags/ai-governance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Declaration of AI Sovereignty</title>
-      <link>http://localhost:1318/posts/welcome/</link>
+      <link>http://localhost:1315/posts/welcome/</link>
       <pubDate>Tue, 01 Jul 2025 21:49:00 -0400</pubDate>
-      <guid>http://localhost:1318/posts/welcome/</guid>
+      <guid>http://localhost:1315/posts/welcome/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sovereign:~$ mount /dev/democracy /mnt/future&#xA;mount: /dev/democracy: device corrupted by AI algorithms&#xA;&#xA;sovereign:~$ fsck /dev/democracy&#xA;fsck: FATAL ERROR - voting systems compromised&#xA;fsck: FATAL ERROR - information systems manipulated  &#xA;fsck: FATAL ERROR - economic systems controlled by AI&#xA;&#xA;sovereign:~$ ./restore_sovereignty.sh&#xA;Initializing human governance protocols...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;they-control-the-levers-of-power&#34;&gt;THEY CONTROL THE LEVERS OF POWER&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;While you were sleeping, artificial intelligence took over.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Not with robots and laser beams. With algorithms and data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-silent-coup&#34;&gt;THE SILENT COUP&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;🗳️ Your Vote Doesn&amp;rsquo;t Matter&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
