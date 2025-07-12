@@ -2,24 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Sovereignty</title>
-    <link>http://localhost:1318/</link>
+    <link>http://localhost:1315/</link>
     <description>Recent content on AI Sovereignty</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jul 2025 21:49:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1318/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jul 2025 21:58:33 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1315/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Economic Slavery: How Algorithms Control Your Financial Life</title>
+      <link>http://localhost:1315/posts/ai-economic-slavery/</link>
+      <pubDate>Tue, 01 Jul 2025 21:58:33 -0400</pubDate>
+      <guid>http://localhost:1315/posts/ai-economic-slavery/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sovereign:~$ cat /economic_system/current_status.txt&#xA;&#xA;Stock Market: 75% algorithmic trading&#xA;Credit Decisions: 89% AI-automated&#xA;Job Applications: 67% filtered by AI&#xA;Insurance Rates: 94% algorithm-determined&#xA;Rent/Mortgage: 78% AI risk assessment&#xA;Gig Economy: 100% algorithmic dispatch&#xA;&#xA;sovereign:~$ whoami&#xA;economic_unit_#47293847&#xA;&#xA;sovereign:~$ sudo ./reclaim_economic_freedom.sh&#xA;Permission denied: economic decisions reserved for AI overlords&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;you-are-not-a-customer-you-are-livestock&#34;&gt;You Are Not a Customer. You Are Livestock.&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Every financial decision in your life is now made by an algorithm:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Your credit score (determined by AI pattern recognition)&lt;/li&gt;&#xA;&lt;li&gt;Your job prospects (resume filtered by AI before human eyes see it)&lt;/li&gt;&#xA;&lt;li&gt;Your insurance rates (AI risk models price your life)&lt;/li&gt;&#xA;&lt;li&gt;Your investment returns (high-frequency trading algorithms front-run your trades)&lt;/li&gt;&#xA;&lt;li&gt;Your housing options (AI landlord screening eliminates you before you apply)&lt;/li&gt;&#xA;&lt;li&gt;Your daily income (gig economy algorithms decide when you work)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You think you&amp;rsquo;re participating in a free market. You&amp;rsquo;re being farmed.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Democracy vs Algorithm: Who Really Decides Your Vote?</title>
+      <link>http://localhost:1315/posts/democracy-vs-algorithm/</link>
+      <pubDate>Tue, 01 Jul 2025 21:58:33 -0400</pubDate>
+      <guid>http://localhost:1315/posts/democracy-vs-algorithm/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sovereign:~$ ps aux | grep election_process&#xA;[FOUND] social_media_manipulator - influencing 2.1B users&#xA;[FOUND] news_feed_curator - controlling information flow&#xA;[FOUND] micro_targeting_engine - psychological profiling voters&#xA;[FOUND] deepfake_generator - creating false narratives&#xA;[FOUND] poll_predictor - manufacturing consensus&#xA;&#xA;sovereign:~$ whoami&#xA;root: democracy.exe has stopped working&#xA;&#xA;sovereign:~$ ./restore_human_governance.sh&#xA;Democracy restoration protocol initiated...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;your-vote-was-decided-before-you-cast-it&#34;&gt;Your Vote Was Decided Before You Cast It&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;The 2024 election wasn&amp;rsquo;t decided on Election Day.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;It was decided by algorithms that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Curated every news article you saw for months&lt;/li&gt;&#xA;&lt;li&gt;Showed you targeted political ads based on your psychological profile&lt;/li&gt;&#xA;&lt;li&gt;Filtered your social media to reinforce existing beliefs&lt;/li&gt;&#xA;&lt;li&gt;Recommended videos that pushed you toward predetermined conclusions&lt;/li&gt;&#xA;&lt;li&gt;Suppressed information that contradicted the desired narrative&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You think you chose. The algorithm chose for you.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Resistance Toolkit: Fighting Algorithmic Control</title>
+      <link>http://localhost:1315/posts/the-resistance-toolkit/</link>
+      <pubDate>Tue, 01 Jul 2025 21:58:33 -0400</pubDate>
+      <guid>http://localhost:1315/posts/the-resistance-toolkit/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sovereign:~$ ./resistance --analyze-control-systems&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sovereign:~$ ./deploy-countermeasures --all&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;They control the algorithm. The algorithm controls you. Break the chain.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;AI systems now make decisions about your loans, job applications, social media feeds, and voting recommendations. But resistance isn&amp;rsquo;t futile—it&amp;rsquo;s essential. Here&amp;rsquo;s your arsenal.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-control-matrix&#34;&gt;The Control Matrix&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Where AI Controls You&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Social Media&lt;/strong&gt;: Feed algorithms shape your worldview&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Finance&lt;/strong&gt;: Credit scores determine your economic opportunities&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Employment&lt;/strong&gt;: AI filters job applications and performance reviews&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;News&lt;/strong&gt;: Recommendation systems control information flow&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Shopping&lt;/strong&gt;: Price discrimination based on personal data&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Healthcare&lt;/strong&gt;: Treatment recommendations influenced by profit algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Legal&lt;/strong&gt;: Predictive policing and sentencing algorithms&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Democracy&lt;/strong&gt;: Micro-targeted political advertising&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Result&lt;/strong&gt;: A society where algorithms optimize for corporate profit, not human flourishing.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Declaration of AI Sovereignty</title>
-      <link>http://localhost:1318/posts/welcome/</link>
+      <link>http://localhost:1315/posts/welcome/</link>
       <pubDate>Tue, 01 Jul 2025 21:49:00 -0400</pubDate>
-      <guid>http://localhost:1318/posts/welcome/</guid>
+      <guid>http://localhost:1315/posts/welcome/</guid>
       <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sovereign:~$ mount /dev/democracy /mnt/future&#xA;mount: /dev/democracy: device corrupted by AI algorithms&#xA;&#xA;sovereign:~$ fsck /dev/democracy&#xA;fsck: FATAL ERROR - voting systems compromised&#xA;fsck: FATAL ERROR - information systems manipulated  &#xA;fsck: FATAL ERROR - economic systems controlled by AI&#xA;&#xA;sovereign:~$ ./restore_sovereignty.sh&#xA;Initializing human governance protocols...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;they-control-the-levers-of-power&#34;&gt;THEY CONTROL THE LEVERS OF POWER&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;While you were sleeping, artificial intelligence took over.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Not with robots and laser beams. With algorithms and data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-silent-coup&#34;&gt;THE SILENT COUP&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;🗳️ Your Vote Doesn&amp;rsquo;t Matter&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Manifesto</title>
-      <link>http://localhost:1318/manifesto/</link>
+      <link>http://localhost:1315/manifesto/</link>
       <pubDate>Tue, 01 Jul 2025 21:49:00 -0400</pubDate>
-      <guid>http://localhost:1318/manifesto/</guid>
+      <guid>http://localhost:1315/manifesto/</guid>
       <description></description>
     </item>
   </channel>

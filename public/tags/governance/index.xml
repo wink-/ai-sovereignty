@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Governance on AI Sovereignty</title>
+    <link>http://localhost:1315/tags/governance/</link>
+    <description>Recent content in Governance on AI Sovereignty</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jul 2025 21:58:33 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1315/tags/governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Democracy vs Algorithm: Who Really Decides Your Vote?</title>
+      <link>http://localhost:1315/posts/democracy-vs-algorithm/</link>
+      <pubDate>Tue, 01 Jul 2025 21:58:33 -0400</pubDate>
+      <guid>http://localhost:1315/posts/democracy-vs-algorithm/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sovereign:~$ ps aux | grep election_process&#xA;[FOUND] social_media_manipulator - influencing 2.1B users&#xA;[FOUND] news_feed_curator - controlling information flow&#xA;[FOUND] micro_targeting_engine - psychological profiling voters&#xA;[FOUND] deepfake_generator - creating false narratives&#xA;[FOUND] poll_predictor - manufacturing consensus&#xA;&#xA;sovereign:~$ whoami&#xA;root: democracy.exe has stopped working&#xA;&#xA;sovereign:~$ ./restore_human_governance.sh&#xA;Democracy restoration protocol initiated...&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;your-vote-was-decided-before-you-cast-it&#34;&gt;Your Vote Was Decided Before You Cast It&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;The 2024 election wasn&amp;rsquo;t decided on Election Day.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;It was decided by algorithms that:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Curated every news article you saw for months&lt;/li&gt;&#xA;&lt;li&gt;Showed you targeted political ads based on your psychological profile&lt;/li&gt;&#xA;&lt;li&gt;Filtered your social media to reinforce existing beliefs&lt;/li&gt;&#xA;&lt;li&gt;Recommended videos that pushed you toward predetermined conclusions&lt;/li&gt;&#xA;&lt;li&gt;Suppressed information that contradicted the desired narrative&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;You think you chose. The algorithm chose for you.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

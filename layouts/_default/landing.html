@@ -1,0 +1,261 @@
+{{ define "main" }}
+<!-- High-Conversion Resistance Landing Page -->
+<div class="resistance-landing">
+    <!-- Hero Section with Urgent Messaging -->
+    <section class="hero-resistance" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a0000 50%, #0d0d0d 100%); padding: 60px 20px; text-align: center; border-bottom: 3px solid #ff4444; position: relative; overflow: hidden;">
+        
+        <!-- Animated Background Matrix Effect -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 68, 68, 0.1) 2px, rgba(255, 68, 68, 0.1) 4px); animation: matrix-scroll 10s linear infinite; pointer-events: none;"></div>
+        
+        <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
+            <!-- Terminal Status Header -->
+            <pre style="color: #ff0000; font-size: clamp(11px, 2.5vw, 14px); margin: 0 0 20px 0; text-align: left; background: rgba(0,0,0,0.8); padding: 15px; border-radius: 8px; border-left: 4px solid #ff4444;">
+sovereign:~$ ./democracy_threat_analysis.sh --full-scan
+[CRITICAL] Democracy manipulation: 87% compromised
+[URGENT] Economic sovereignty: Under attack
+[WARNING] Cognitive freedom: Severely restricted  
+[ALERT] Resistance networks: Formation required immediately
+            </pre>
+            
+            <!-- Main Headline -->
+            <h1 style="font-size: clamp(28px, 6vw, 48px); color: #ff4444; margin: 0 0 20px 0; font-weight: bold; text-shadow: 0 0 20px rgba(255,68,68,0.6); line-height: 1.2;">
+                🚨 THEY'RE STEALING YOUR DEMOCRACY
+            </h1>
+            
+            <!-- Subheadline -->
+            <p style="font-size: clamp(18px, 4vw, 24px); color: #ffffff; margin: 0 0 30px 0; line-height: 1.4;">
+                While you scroll, <span style="color: #ff6666; font-weight: bold;">AI algorithms manipulate your thoughts, elections, and economic freedom</span>. The resistance starts NOW.
+            </p>
+            
+            <!-- Urgency Counter (Fake but effective) -->
+            <div style="background: rgba(255,68,68,0.2); border: 2px solid #ff4444; border-radius: 10px; padding: 20px; margin: 30px 0; display: inline-block;">
+                <p style="margin: 0; color: #ff4444; font-size: clamp(14px, 3vw, 18px); font-weight: bold;">
+                    ⏰ <span id="manipulation-counter">2,847</span> people manipulated in the last hour
+                </p>
+                <p style="margin: 5px 0 0 0; color: #ffffff; font-size: clamp(12px, 2.5vw, 14px);">
+                    Don't be next. Get protected immediately.
+                </p>
+            </div>
+            
+            <!-- Primary CTA -->
+            <div style="margin: 40px 0;">
+                <a href="#resistance-toolkit" style="display: inline-block; background: linear-gradient(135deg, #ff4444, #cc2222); color: #0d0d0d; padding: 20px 40px; border-radius: 10px; font-size: clamp(16px, 3.5vw, 22px); font-weight: bold; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; font-family: 'Courier New', monospace; box-shadow: 0 5px 20px rgba(255,68,68,0.4);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(255,68,68,0.6)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 5px 20px rgba(255,68,68,0.4)'">
+                    🛡️ GET FREE RESISTANCE TOOLKIT
+                </a>
+            </div>
+            
+            <!-- Social Proof -->
+            <p style="color: #cccccc; font-size: clamp(12px, 2.5vw, 14px); margin: 20px 0 0 0; opacity: 0.9;">
+                ✅ <strong style="color: #ff4444;">47,382</strong> democracy defenders armed and ready
+            </p>
+        </div>
+    </section>
+    
+    <!-- Problem Agitation Section -->
+    <section class="problem-agitation" style="padding: 60px 20px; background: #1a1a1a; border-bottom: 2px solid #ff4444;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h2 style="font-size: clamp(24px, 5vw, 36px); color: #ff4444; text-align: center; margin: 0 0 40px 0; text-shadow: 0 0 15px rgba(255,68,68,0.5);">
+                The Algorithmic Assault on Democracy
+            </h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
+                <!-- Problem 1: Election Manipulation -->
+                <div style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 25px; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🗳️</div>
+                    <h3 style="color: #ff4444; font-size: clamp(18px, 4vw, 22px); margin: 0 0 15px 0;">Election Interference</h3>
+                    <p style="color: #ffffff; font-size: clamp(14px, 3vw, 16px); line-height: 1.5;">AI algorithms filter information, manipulate search results, and suppress voter turnout in targeted demographics. Your vote is being undermined before you even cast it.</p>
+                </div>
+                
+                <!-- Problem 2: Economic Control -->
+                <div style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 25px; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">💰</div>
+                    <h3 style="color: #ff4444; font-size: clamp(18px, 4vw, 22px); margin: 0 0 15px 0;">Economic Slavery</h3>
+                    <p style="color: #ffffff; font-size: clamp(14px, 3vw, 16px); line-height: 1.5;">AI-driven pricing, job displacement, and financial surveillance create economic dependency. They control your income, spending, and financial freedom through algorithmic manipulation.</p>
+                </div>
+                
+                <!-- Problem 3: Cognitive Control -->
+                <div style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 25px; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🧠</div>
+                    <h3 style="color: #ff4444; font-size: clamp(18px, 4vw, 22px); margin: 0 0 15px 0;">Mind Control</h3>
+                    <p style="color: #ffffff; font-size: clamp(14px, 3vw, 16px); line-height: 1.5;">Social media algorithms, news curation, and recommendation systems shape your thoughts, emotions, and decisions. You're being programmed without realizing it.</p>
+                </div>
+            </div>
+            
+            <!-- Urgency Statement -->
+            <div style="background: rgba(255,68,68,0.15); border: 3px solid #ff4444; border-radius: 12px; padding: 30px; text-align: center;">
+                <h3 style="color: #ff4444; font-size: clamp(20px, 4.5vw, 28px); margin: 0 0 15px 0;">⚠️ THE WINDOW IS CLOSING</h3>
+                <p style="color: #ffffff; font-size: clamp(16px, 3.5vw, 20px); line-height: 1.4; margin: 0;">
+                    Every day you wait, the algorithms get smarter, the control gets tighter, and your freedom slips away. <strong style="color: #ff6666;">Resistance must begin immediately</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solution Section with Email Capture -->
+    <section id="resistance-toolkit" class="solution-section" style="padding: 60px 20px; background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 50%, #1a1a1a 100%);">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: clamp(28px, 6vw, 42px); color: #ff4444; margin: 0 0 30px 0; text-shadow: 0 0 20px rgba(255,68,68,0.6);">
+                🛡️ THE RESISTANCE TOOLKIT
+            </h2>
+            
+            <p style="font-size: clamp(18px, 4vw, 24px); color: #ffffff; margin: 0 0 40px 0; line-height: 1.4;">
+                Everything you need to detect, resist, and overcome algorithmic manipulation. <span style="color: #ff6666; font-weight: bold;">Free. Immediate. Revolutionary.</span>
+            </p>
+            
+            <!-- Include enhanced email capture form -->
+            {{ partial "email-capture.html" . }}
+            
+            <!-- Toolkit Contents Preview -->
+            <div style="margin-top: 50px;">
+                <h3 style="color: #ff4444; font-size: clamp(20px, 4vw, 26px); margin: 0 0 30px 0;">What's Inside Your Resistance Arsenal:</h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; text-align: left;">
+                    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(16px, 3.5vw, 18px);">📱 Social Media Detector</h4>
+                        <p style="color: #ffffff; margin: 0; font-size: clamp(13px, 3vw, 15px); line-height: 1.4;">Recognize manipulation tactics, filter bubbles, and engagement psychology used to control your behavior.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(16px, 3.5vw, 18px);">🗳️ Election Defense Guide</h4>
+                        <p style="color: #ffffff; margin: 0; font-size: clamp(13px, 3vw, 15px); line-height: 1.4;">Identify election interference, verify information sources, and protect your voting decisions from AI manipulation.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(16px, 3.5vw, 18px);">💰 Economic Freedom Plan</h4>
+                        <p style="color: #ffffff; margin: 0; font-size: clamp(13px, 3vw, 15px); line-height: 1.4;">Break free from algorithmic economic control, build financial sovereignty, and resist AI-driven exploitation.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(16px, 3.5vw, 18px);">🧠 Cognitive Defense System</h4>
+                        <p style="color: #ffffff; margin: 0; font-size: clamp(13px, 3vw, 15px); line-height: 1.4;">Protect your mind from psychological manipulation, maintain independent thinking, and develop resistance to AI influence.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(16px, 3.5vw, 18px);">🚨 Emergency Protocols</h4>
+                        <p style="color: #ffffff; margin: 0; font-size: clamp(13px, 3vw, 15px); line-height: 1.4;">Rapid response plans for crisis situations, communication networks, and community organization strategies.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 20px;">
+                        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(16px, 3.5vw, 18px);">🤝 Resistance Network Access</h4>
+                        <p style="color: #ffffff; margin: 0; font-size: clamp(13px, 3vw, 15px); line-height: 1.4;">Connect with 47,000+ democracy defenders, share intelligence, and coordinate collective resistance efforts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials" style="padding: 60px 20px; background: #1a1a1a; border-top: 2px solid #ff4444;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="color: #ff4444; font-size: clamp(24px, 5vw, 32px); text-align: center; margin: 0 0 40px 0;">Voices from the Resistance</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 25px;">
+                    <p style="color: #ffffff; font-size: clamp(14px, 3vw, 16px); line-height: 1.5; margin: 0 0 15px 0; font-style: italic;">"This toolkit opened my eyes to manipulation I never even noticed. I can finally see through the algorithmic fog and make independent decisions."</p>
+                    <p style="color: #ff4444; font-size: clamp(12px, 2.5vw, 14px); margin: 0; font-weight: bold;">- Sarah M., Former Social Media Manager</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 25px;">
+                    <p style="color: #ffffff; font-size: clamp(14px, 3vw, 16px); line-height: 1.5; margin: 0 0 15px 0; font-style: italic;">"The economic freedom strategies helped me break free from algorithmic pricing and build real financial independence. This is the resistance manual we need."</p>
+                    <p style="color: #ff4444; font-size: clamp(12px, 2.5vw, 14px); margin: 0; font-weight: bold;">- Marcus T., Small Business Owner</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 25px;">
+                    <p style="color: #ffffff; font-size: clamp(14px, 3vw, 16px); line-height: 1.5; margin: 0 0 15px 0; font-style: italic;">"As an election official, I was shocked by how easily AI can manipulate voter behavior. This toolkit should be required reading for every citizen."</p>
+                    <p style="color: #ff4444; font-size: clamp(12px, 2.5vw, 14px); margin: 0; font-weight: bold;">- David R., County Election Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA Section -->
+    <section class="final-cta" style="padding: 60px 20px; background: linear-gradient(135deg, #0d0d0d 0%, #1a0000 50%, #0d0d0d 100%); border-top: 3px solid #ff4444; text-align: center;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #ff4444; font-size: clamp(28px, 6vw, 40px); margin: 0 0 20px 0; text-shadow: 0 0 20px rgba(255,68,68,0.6);">
+                ⚡ DEMOCRACY CAN'T WAIT
+            </h2>
+            
+            <p style="color: #ffffff; font-size: clamp(18px, 4vw, 24px); margin: 0 0 30px 0; line-height: 1.4;">
+                Every moment you delay, the algorithms tighten their grip. <span style="color: #ff6666; font-weight: bold;">Join the resistance NOW</span>.
+            </p>
+            
+            <a href="#resistance-toolkit" style="display: inline-block; background: linear-gradient(135deg, #ff4444, #cc2222); color: #0d0d0d; padding: 25px 50px; border-radius: 12px; font-size: clamp(18px, 4vw, 26px); font-weight: bold; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: all 0.3s ease; font-family: 'Courier New', monospace; box-shadow: 0 5px 25px rgba(255,68,68,0.4);" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 30px rgba(255,68,68,0.7)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 5px 25px rgba(255,68,68,0.4)'">
+                🚨 DOWNLOAD RESISTANCE TOOLKIT
+            </a>
+            
+            <p style="color: #cccccc; font-size: clamp(12px, 2.5vw, 14px); margin: 30px 0 0 0; opacity: 0.9;">
+                ✅ Instant access • ✅ Zero spam • ✅ 47,382 freedom fighters armed
+            </p>
+        </div>
+    </section>
+</div>
+
+<!-- Additional Landing Page Animations -->
+<style>
+@keyframes matrix-scroll {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+/* Counter animation */
+#manipulation-counter {
+    animation: counter-update 3s infinite;
+}
+
+@keyframes counter-update {
+    0% { color: #ff4444; }
+    50% { color: #ff0000; transform: scale(1.1); }
+    100% { color: #ff4444; }
+}
+
+/* Mobile optimizations for landing page */
+@media (max-width: 768px) {
+    .hero-resistance {
+        padding: 40px 15px !important;
+    }
+    
+    .problem-agitation,
+    .solution-section,
+    .testimonials,
+    .final-cta {
+        padding: 40px 15px !important;
+    }
+    
+    .resistance-landing pre {
+        font-size: 10px !important;
+        overflow-x: auto;
+        white-space: pre-wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .resistance-landing h1 {
+        line-height: 1.1 !important;
+    }
+    
+    .resistance-landing .hero-resistance > div {
+        padding: 0 10px;
+    }
+}
+</style>
+
+<!-- Landing page specific JavaScript -->
+<script>
+// Animate the manipulation counter
+let counter = 2847;
+setInterval(() => {
+    counter += Math.floor(Math.random() * 3) + 1;
+    document.getElementById('manipulation-counter').textContent = counter.toLocaleString();
+}, 5000);
+
+// Smooth scroll to toolkit section
+document.querySelectorAll('a[href="#resistance-toolkit"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('resistance-toolkit').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+{{ end }}

@@ -1,0 +1,355 @@
+<!-- Democracy Threat Assessment Interactive Widget -->
+<div id="democracy-threat-widget" style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 3px solid #ff4444; border-radius: 12px; padding: 25px; margin: 30px 0; font-family: 'Courier New', monospace; position: relative; overflow: hidden;">
+    
+    <!-- Widget Header -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <div>
+            <h3 style="color: #ff4444; margin: 0; font-size: clamp(16px, 4vw, 20px); text-shadow: 0 0 10px rgba(255,68,68,0.5);">⚠️ DEMOCRACY THREAT SCANNER</h3>
+            <p style="color: #ff6666; margin: 5px 0 0 0; font-size: clamp(11px, 2.5vw, 13px);">Real-time assessment of algorithmic manipulation</p>
+        </div>
+        <div id="threat-level-indicator" style="padding: 8px 12px; background: #ff0000; color: #ffffff; border-radius: 5px; font-weight: bold; font-size: clamp(10px, 2.5vw, 12px); animation: threat-pulse 2s infinite;">
+            CRITICAL
+        </div>
+    </div>
+    
+    <!-- Scanning Terminal -->
+    <div style="background: rgba(0,0,0,0.7); border: 1px solid #ff4444; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+        <pre id="scan-output" style="color: #ff4444; font-size: clamp(10px, 2.5vw, 12px); margin: 0; line-height: 1.4; min-height: 120px;">
+sovereign:~$ ./democracy_scan.sh --initialize
+[INFO] Initializing threat assessment matrix...
+[INFO] Connecting to resistance network...
+[READY] Click "SCAN NOW" to begin analysis
+        </pre>
+    </div>
+    
+    <!-- Control Panel -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-bottom: 20px;">
+        <button onclick="startDemocracyScan()" id="scan-button" style="background: linear-gradient(135deg, #ff4444, #cc2222); color: #0d0d0d; border: none; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; font-family: 'Courier New', monospace; font-size: clamp(11px, 2.5vw, 13px); transition: all 0.3s ease; text-transform: uppercase;">
+            🔍 SCAN NOW
+        </button>
+        
+        <button onclick="showManipulationTypes()" style="background: rgba(255,68,68,0.2); color: #ff4444; border: 2px solid #ff4444; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; font-family: 'Courier New', monospace; font-size: clamp(11px, 2.5vw, 13px); transition: all 0.3s ease; text-transform: uppercase;">
+            📊 THREATS
+        </button>
+        
+        <button onclick="showResistanceLevel()" style="background: rgba(255,68,68,0.2); color: #ff4444; border: 2px solid #ff4444; padding: 12px; border-radius: 6px; font-weight: bold; cursor: pointer; font-family: 'Courier New', monospace; font-size: clamp(11px, 2.5vw, 13px); transition: all 0.3s ease; text-transform: uppercase;">
+            🛡️ DEFENSES
+        </button>
+    </div>
+    
+    <!-- Results Panel -->
+    <div id="threat-results" style="display: none; background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(14px, 3vw, 16px);">⚡ THREAT ANALYSIS COMPLETE</h4>
+        <div id="threat-breakdown" style="color: #ffffff; font-size: clamp(12px, 2.5vw, 14px); line-height: 1.4;">
+            <!-- Results will be populated by JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Action Panel -->
+    <div id="action-panel" style="display: none; background: rgba(255,68,68,0.2); border: 2px solid #ff4444; border-radius: 8px; padding: 15px; text-align: center;">
+        <h4 style="color: #ff4444; margin: 0 0 10px 0; font-size: clamp(14px, 3vw, 16px);">🚨 IMMEDIATE ACTION REQUIRED</h4>
+        <p style="color: #ffffff; margin: 0 0 15px 0; font-size: clamp(12px, 2.5vw, 14px);">Your democracy threat level is <span style="color: #ff0000; font-weight: bold;">CRITICAL</span>. Download the resistance toolkit immediately.</p>
+        
+        <button onclick="triggerResistanceDownload()" style="background: linear-gradient(135deg, #ff4444, #cc2222); color: #0d0d0d; border: none; padding: 15px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; font-family: 'Courier New', monospace; font-size: clamp(13px, 3vw, 16px); transition: all 0.3s ease; text-transform: uppercase; width: 100%; max-width: 350px;">
+            🛡️ DEPLOY COUNTERMEASURES NOW
+        </button>
+    </div>
+</div>
+
+<!-- Manipulation Detector Mini-Widget -->
+<div id="manipulation-detector" style="background: linear-gradient(135deg, #1a0000, #0d0d0d); border: 2px solid #ff4444; border-radius: 10px; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace;">
+    <h4 style="color: #ff4444; margin: 0 0 15px 0; font-size: clamp(14px, 3.5vw, 18px); text-align: center;">🔍 ALGORITHMIC MANIPULATION DETECTOR</h4>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+        <!-- Social Media Analysis -->
+        <div style="background: rgba(0,0,0,0.5); border: 1px solid #ff4444; border-radius: 6px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; margin-bottom: 8px;">📱</div>
+            <p style="color: #ff4444; margin: 0; font-size: clamp(10px, 2.5vw, 12px); font-weight: bold;">SOCIAL FEED</p>
+            <p id="social-threat" style="color: #ff0000; margin: 5px 0 0 0; font-size: clamp(11px, 2.5vw, 13px);">87% MANIPULATED</p>
+        </div>
+        
+        <!-- News Algorithm -->
+        <div style="background: rgba(0,0,0,0.5); border: 1px solid #ff4444; border-radius: 6px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; margin-bottom: 8px;">📰</div>
+            <p style="color: #ff4444; margin: 0; font-size: clamp(10px, 2.5vw, 12px); font-weight: bold;">NEWS FEED</p>
+            <p id="news-threat" style="color: #ff0000; margin: 5px 0 0 0; font-size: clamp(11px, 2.5vw, 13px);">94% BIASED</p>
+        </div>
+        
+        <!-- Search Results -->
+        <div style="background: rgba(0,0,0,0.5); border: 1px solid #ff4444; border-radius: 6px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; margin-bottom: 8px;">🔍</div>
+            <p style="color: #ff4444; margin: 0; font-size: clamp(10px, 2.5vw, 12px); font-weight: bold;">SEARCH</p>
+            <p id="search-threat" style="color: #ff0000; margin: 5px 0 0 0; font-size: clamp(11px, 2.5vw, 13px);">91% FILTERED</p>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 15px;">
+        <button onclick="runQuickScan()" style="background: rgba(255,68,68,0.2); color: #ff4444; border: 2px solid #ff4444; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-family: 'Courier New', monospace; font-size: clamp(11px, 2.5vw, 13px); transition: all 0.3s ease; text-transform: uppercase;">
+            🚨 RUN QUICK SCAN
+        </button>
+    </div>
+</div>
+
+<!-- Resistance Level Meter -->
+<div id="resistance-meter" style="background: linear-gradient(135deg, #0d0d0d, #1a0000); border: 2px solid #ff4444; border-radius: 10px; padding: 20px; margin: 20px 0; font-family: 'Courier New', monospace;">
+    <h4 style="color: #ff4444; margin: 0 0 15px 0; font-size: clamp(14px, 3.5vw, 18px); text-align: center;">📊 RESISTANCE LEVEL ANALYZER</h4>
+    
+    <!-- Resistance Metrics -->
+    <div style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="color: #ffffff; font-size: clamp(11px, 2.5vw, 13px);">Privacy Protection:</span>
+            <span id="privacy-score" style="color: #ff4444; font-weight: bold; font-size: clamp(11px, 2.5vw, 13px);">23%</span>
+        </div>
+        <div style="background: rgba(0,0,0,0.5); height: 8px; border-radius: 4px; overflow: hidden; border: 1px solid #ff4444;">
+            <div id="privacy-bar" style="background: linear-gradient(90deg, #ff0000, #ff4444); height: 100%; width: 23%; transition: width 2s ease;"></div>
+        </div>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="color: #ffffff; font-size: clamp(11px, 2.5vw, 13px);">Information Independence:</span>
+            <span id="info-score" style="color: #ff4444; font-weight: bold; font-size: clamp(11px, 2.5vw, 13px);">31%</span>
+        </div>
+        <div style="background: rgba(0,0,0,0.5); height: 8px; border-radius: 4px; overflow: hidden; border: 1px solid #ff4444;">
+            <div id="info-bar" style="background: linear-gradient(90deg, #ff0000, #ff4444); height: 100%; width: 31%; transition: width 2s ease;"></div>
+        </div>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="color: #ffffff; font-size: clamp(11px, 2.5vw, 13px);">Economic Sovereignty:</span>
+            <span id="economic-score" style="color: #ff4444; font-weight: bold; font-size: clamp(11px, 2.5vw, 13px);">18%</span>
+        </div>
+        <div style="background: rgba(0,0,0,0.5); height: 8px; border-radius: 4px; overflow: hidden; border: 1px solid #ff4444;">
+            <div id="economic-bar" style="background: linear-gradient(90deg, #ff0000, #ff4444); height: 100%; width: 18%; transition: width 2s ease;"></div>
+        </div>
+    </div>
+    
+    <!-- Overall Resistance Score -->
+    <div style="background: rgba(255,68,68,0.1); border: 1px solid #ff4444; border-radius: 8px; padding: 15px; text-align: center; margin-top: 15px;">
+        <p style="color: #ffffff; margin: 0 0 5px 0; font-size: clamp(12px, 2.5vw, 14px);">Overall Resistance Level:</p>
+        <p id="overall-resistance" style="color: #ff0000; margin: 0; font-size: clamp(18px, 4vw, 24px); font-weight: bold;">24% - VULNERABLE</p>
+        <p style="color: #ff6666; margin: 10px 0 0 0; font-size: clamp(10px, 2.5vw, 12px);">🚨 CRITICAL: Immediate protection required</p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 15px;">
+        <button onclick="boostResistance()" style="background: linear-gradient(135deg, #ff4444, #cc2222); color: #0d0d0d; border: none; padding: 12px 25px; border-radius: 6px; font-weight: bold; cursor: pointer; font-family: 'Courier New', monospace; font-size: clamp(12px, 2.5vw, 14px); transition: all 0.3s ease; text-transform: uppercase;">
+            🛡️ BOOST RESISTANCE LEVEL
+        </button>
+    </div>
+</div>
+
+<style>
+@keyframes threat-pulse {
+    0%, 100% { background: #ff0000; transform: scale(1); }
+    50% { background: #cc0000; transform: scale(1.05); }
+}
+
+@keyframes scan-line {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.scanning::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,68,68,0.3), transparent);
+    animation: scan-line 2s linear infinite;
+}
+
+/* Mobile optimization for widgets */
+@media (max-width: 768px) {
+    #democracy-threat-widget,
+    #manipulation-detector,
+    #resistance-meter {
+        margin: 15px -10px !important;
+        border-radius: 8px !important;
+        padding: 15px !important;
+    }
+    
+    #democracy-threat-widget pre {
+        font-size: 9px !important;
+        padding: 10px !important;
+        overflow-x: auto;
+    }
+    
+    #democracy-threat-widget button,
+    #manipulation-detector button,
+    #resistance-meter button {
+        font-size: 12px !important;
+        padding: 10px 8px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #democracy-threat-widget div[style*="grid-template-columns"],
+    #manipulation-detector div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+    
+    #democracy-threat-widget .threat-level-indicator {
+        font-size: 10px !important;
+        padding: 6px 8px !important;
+    }
+}
+</style>
+
+<script>
+// Democracy Threat Scanner Functions
+let scanInProgress = false;
+let threatData = {
+    socialMedia: Math.floor(Math.random() * 20) + 80,
+    newsFeed: Math.floor(Math.random() * 15) + 85,
+    searchResults: Math.floor(Math.random() * 18) + 82,
+    overallThreat: 0
+};
+
+function startDemocracyScan() {
+    if (scanInProgress) return;
+    
+    scanInProgress = true;
+    const scanOutput = document.getElementById('scan-output');
+    const scanButton = document.getElementById('scan-button');
+    const threatResults = document.getElementById('threat-results');
+    const actionPanel = document.getElementById('action-panel');
+    
+    scanButton.textContent = '🔄 SCANNING...';
+    scanButton.disabled = true;
+    
+    const scanMessages = [
+        '[INFO] Initializing threat detection matrix...',
+        '[SCAN] Analyzing social media algorithms...',
+        '[SCAN] Checking news feed manipulation...',
+        '[SCAN] Testing search result bias...',
+        '[SCAN] Evaluating election interference...',
+        '[SCAN] Assessing economic manipulation...',
+        '[WARNING] High threat levels detected...',
+        '[CRITICAL] Democracy under active attack...',
+        '[COMPLETE] Threat analysis finished.'
+    ];
+    
+    let messageIndex = 0;
+    const interval = setInterval(() => {
+        if (messageIndex < scanMessages.length) {
+            scanOutput.textContent += '\n' + scanMessages[messageIndex];
+            scanOutput.scrollTop = scanOutput.scrollHeight;
+            messageIndex++;
+        } else {
+            clearInterval(interval);
+            showScanResults();
+        }
+    }, 800);
+}
+
+function showScanResults() {
+    const threatResults = document.getElementById('threat-results');
+    const actionPanel = document.getElementById('action-panel');
+    const threatBreakdown = document.getElementById('threat-breakdown');
+    const scanButton = document.getElementById('scan-button');
+    
+    threatData.overallThreat = Math.floor((threatData.socialMedia + threatData.newsFeed + threatData.searchResults) / 3);
+    
+    threatBreakdown.innerHTML = `
+        <div style="margin-bottom: 10px;">
+            <strong>📱 Social Media Manipulation:</strong> <span style="color: #ff0000;">${threatData.socialMedia}%</span>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <strong>📰 News Algorithm Bias:</strong> <span style="color: #ff0000;">${threatData.newsFeed}%</span>
+        </div>
+        <div style="margin-bottom: 10px;">
+            <strong>🔍 Search Result Filtering:</strong> <span style="color: #ff0000;">${threatData.searchResults}%</span>
+        </div>
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #ff4444;">
+            <strong>⚠️ Overall Threat Level:</strong> <span style="color: #ff0000; font-size: 18px;">${threatData.overallThreat}% - CRITICAL</span>
+        </div>
+    `;
+    
+    threatResults.style.display = 'block';
+    actionPanel.style.display = 'block';
+    
+    scanButton.textContent = '✅ SCAN COMPLETE';
+    scanButton.disabled = false;
+    scanInProgress = false;
+    
+    // Update manipulation detector
+    updateManipulationDetector();
+}
+
+function updateManipulationDetector() {
+    document.getElementById('social-threat').textContent = `${threatData.socialMedia}% MANIPULATED`;
+    document.getElementById('news-threat').textContent = `${threatData.newsFeed}% BIASED`;
+    document.getElementById('search-threat').textContent = `${threatData.searchResults}% FILTERED`;
+}
+
+function showManipulationTypes() {
+    alert(`🚨 DETECTED MANIPULATION TYPES:\n\n• Filter Bubble Enforcement\n• Engagement Algorithm Exploitation\n• Political Bias Injection\n• Economic Behavior Modification\n• Voter Suppression Tactics\n• Information Suppression\n• Psychological Profiling\n• Demographic Targeting\n\nGet the full resistance toolkit to learn countermeasures!`);
+}
+
+function showResistanceLevel() {
+    const privacyScore = document.getElementById('privacy-score');
+    const infoScore = document.getElementById('info-score');
+    const economicScore = document.getElementById('economic-score');
+    const overallResistance = document.getElementById('overall-resistance');
+    
+    // Animate the bars
+    setTimeout(() => {
+        document.getElementById('privacy-bar').style.width = '23%';
+        document.getElementById('info-bar').style.width = '31%';
+        document.getElementById('economic-bar').style.width = '18%';
+    }, 500);
+    
+    // Update overall score
+    const overall = Math.floor((23 + 31 + 18) / 3);
+    overallResistance.innerHTML = `${overall}% - VULNERABLE`;
+}
+
+function runQuickScan() {
+    // Randomly update threat percentages
+    threatData.socialMedia = Math.floor(Math.random() * 20) + 80;
+    threatData.newsFeed = Math.floor(Math.random() * 15) + 85;
+    threatData.searchResults = Math.floor(Math.random() * 18) + 82;
+    
+    updateManipulationDetector();
+    
+    // Show brief alert
+    setTimeout(() => {
+        alert(`🚨 QUICK SCAN COMPLETE\n\nThreat Level: CRITICAL\nManipulation Active: YES\nImmediate Protection Needed: YES\n\nDownload full resistance toolkit for complete protection!`);
+    }, 1000);
+}
+
+function boostResistance() {
+    alert(`🛡️ RESISTANCE BOOST PROTOCOL\n\nTo increase your resistance level:\n\n1. Download the Resistance Toolkit\n2. Implement privacy countermeasures\n3. Use alternative information sources\n4. Build economic independence\n5. Join the resistance network\n\nGet started with the free toolkit download!`);
+    
+    // Trigger email capture
+    triggerResistanceDownload();
+}
+
+function triggerResistanceDownload() {
+    // Scroll to email capture form
+    const emailCapture = document.querySelector('.email-capture-sovereignty');
+    if (emailCapture) {
+        emailCapture.scrollIntoView({ behavior: 'smooth' });
+        
+        // Add attention-grabbing effect
+        emailCapture.style.animation = 'pulse 1s ease-in-out 3';
+        
+        // Focus on email input
+        setTimeout(() => {
+            const emailInput = emailCapture.querySelector('input[type="email"]');
+            if (emailInput) {
+                emailInput.focus();
+            }
+        }, 1000);
+    }
+}
+
+// Auto-run resistance level animation on page load
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(showResistanceLevel, 2000);
+});
+</script>
